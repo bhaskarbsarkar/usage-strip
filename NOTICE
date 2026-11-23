@@ -1,0 +1,29 @@
+usage-strip
+Copyright 2026 bhaskarbsarkar
+
+This product is a modified copy of Token Weather Usage 3.10.7 by Eric Cologni
+(https://github.com/augiefra/claude-mods), licensed under the Apache License,
+Version 2.0 (see LICENSE). hooks/weather.mjs, hooks/weather.d.mts and
+hooks/weather.test.ts come from it; changes are marked "usage-strip" in
+weather.mjs. hooks/bar.ts and hooks/register.tsx are new.
+
+Changes from upstream:
+- Everything on one line: the band never wraps onto a second row.
+- No progress bars on the 5-hour and 7-day pills: label, percentage and time
+  left only.
+- The context pill keeps the weather icon and the token count; the per-prompt
+  bars and the last-prompt trend moved to its hover card.
+- The cost pill keeps the session total; what it means and what the last
+  prompt added moved to a new hover card.
+- New hover cards on the 5-hour and 7-day pills naming each limit, its share
+  used and when it resets.
+- A /bar command to choose which usage band shows above the prompt when
+  several mods draw one.
+
+Token Weather Usage credits:
+- Weather, context and turns chart adapted from Anthropic's Token Weather
+  example (claude-code-playground), Copyright 2026 Anthropic PBC, Apache-2.0.
+- Limit gauges written after HolyGrail's usage-meter
+  (https://github.com/HolyGrail/claude-mods), without copying its code.
+- Prompt cache block written after Daniel San's prompt-cache-control
+  (https://github.com/davila7/claude-code-templates, MIT), without copying its code.

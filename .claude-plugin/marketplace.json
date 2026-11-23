@@ -1,0 +1,18 @@
+{
+  "name": "usage-strip",
+  "owner": {
+    "name": "bhaskarbsarkar",
+    "url": "https://github.com/bhaskarbsarkar"
+  },
+  "metadata": {
+    "description": "usage-strip: Claude Code usage on one compact line above the prompt."
+  },
+  "plugins": [
+    {
+      "name": "usage-strip",
+      "source": "./",
+      "description": "One compact line above the prompt: context weather, 5-hour and 7-day limits, prompt-cache time left, estimated session cost and running subagents, with the details in hover cards. A slimmed-down fork of Token Weather Usage.",
+      "version": "1.0.0"
+    }
+  ]
+}

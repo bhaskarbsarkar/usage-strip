@@ -1,0 +1,30 @@
+{
+  "name": "usage-strip",
+  "version": "1.0.0",
+  "description": "One compact line above the prompt: context weather, 5-hour and 7-day limits, prompt-cache time left, estimated session cost and running subagents, with the details in hover cards. A slimmed-down fork of Token Weather Usage.",
+  "author": {
+    "name": "bhaskarbsarkar",
+    "url": "https://github.com/bhaskarbsarkar"
+  },
+  "homepage": "https://github.com/bhaskarbsarkar/usage-strip",
+  "repository": "https://github.com/bhaskarbsarkar/usage-strip",
+  "license": "Apache-2.0",
+  "keywords": [
+    "usage",
+    "limits",
+    "context",
+    "prompt-cache",
+    "cost",
+    "status",
+    "band"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "Labels in English (en) or French (fr), or auto: follows LC_ALL, LC_MESSAGES or LANG, and falls back to English.",
+      "default": "auto"
+    }
+  }
+}
